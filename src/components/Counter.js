@@ -18,14 +18,6 @@ class Counter extends Component {
         setTimeout(this.props.onIncrement, 1000)
     }
 
-    increase(counter = 0, method) {
-        if (method === 'INCREMENT') {
-            return counter -= 1;
-        }else if (method === 'DECREMENT') {
-            return counter += 1;
-        }
-    }
-
     render() {
         const { value, onIncrement, onDecrement } = this.props
         return (
